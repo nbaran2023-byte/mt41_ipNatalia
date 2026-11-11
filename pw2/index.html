@@ -3,141 +3,185 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PetWorld — Pet Store &amp; Beyond</title>
+  <title>PETWORLD — Pet Store &amp; Beyond</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+  <!-- ===== HEADER ===== -->
   <header class="header">
     <div class="container header__inner">
-      <a href="#" class="logo"><img src="assets/Logotop.png" alt="PetWorld" width="140" height="28"></a>
-      <nav class="nav" aria-label="Main">
-        <ul class="nav__list">
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#features">Services</a></li>
-          <li><a href="#reviews">Reviews</a></li>
-        </ul>
-        <a href="#contact" class="btn btn--blue btn--sm">Sign up</a>
+      <a href="#" class="logo" aria-label="PETWORLD">
+        <img src="assets/Logotop.png" alt="" height="20">
+      </a>
+      <nav class="header__nav" aria-label="Account">
+        <a href="#" class="header__link">Sign Up</a>
+        <a href="#" class="btn btn--blue">Log in</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="hero" id="hero">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero">
       <div class="container hero__inner">
-        <div class="hero__text">
+        <div class="hero__content">
           <h1 class="hero__title">Pet Store<br>&amp; Beyond</h1>
-          <p class="hero__desc">This is a sample landing page, created with Figma and Anima. No coding involved.</p>
-          <a href="#contact" class="btn btn--yellow">Get Started</a>
+          <p class="hero__text">This is a sample landing page, created with Figma and Anima. No coding involved.</p>
+          <a href="#" class="btn btn--sand">Get Started</a>
         </div>
-        <img class="hero__img" src="assets/Image.png" alt="Two dogs in colorful jackets" width="560" height="420">
+        <img class="hero__image"
+             src="assets/Image.png"
+             onerror="this.onerror=null;this.src='assets/placeholders/hero-dogs.svg'"
+             alt="Two dogs in colourful jackets" width="380" height="350">
       </div>
     </section>
 
-    <section class="video">
-      <div class="video__inner">
-        <div class="video__box">
-          <img class="video__img" src="assets/Video.png" alt="Video cover" width="1100" height="420">
-          <button class="video__play" aria-label="Play video"></button>
+    <!-- ===== VIDEO + PARTNERS ===== -->
+    <section class="showcase">
+      <div class="container showcase__inner">
+        <div class="video">
+          <img class="video__poster"
+               src="assets/Video.png"
+               onerror="this.onerror=null;this.src='assets/placeholders/video-poster.svg'"
+               alt="Dog playing with its owner" width="590" height="360">
+          <button class="video__play" type="button" aria-label="Play video">
+          </button>
         </div>
-      </div>
-    </section>
 
-    <section class="brands" aria-label="Our partners">
-      <ul class="brands__list">
-        <li><img src="assets/Nestle.png" alt="Nestlé"></li>
-        <li><img src="assets/Apple_logo_black 1.png" alt="Apple"></li>
-        <li><img src="assets/Frame (1).png" alt="Beco"></li>
-        <li><img src="assets/Amazon_logo 2.png" alt="Amazon"></li>
-        <li><img src="assets/Google.png" alt="Google"></li>
-        <li><img src="assets/Walmart.png" alt="Walmart"></li>
+        <ul class="partners" aria-label="Our partners">
+        <li class="partners__item"><img src="assets/Nestle.png" alt="Nestlé" height="28"></li>
+        <li class="partners__item"><img src="assets/Apple_logo_black 1.png" alt="Apple" height="28"></li>
+        <li class="partners__item"><img src="assets/Frame (1).png" alt="BECO" height="28"></li>
+        <li class="partners__item"><img src="assets/Amazon_logo 2.png" alt="Amazon" height="28"></li>
+        <li class="partners__item"><img src="assets/Google.png" alt="Google" height="28"></li>
+        <li class="partners__item"><img src="assets/Walmart.png" alt="Walmart" height="28"></li>
       </ul>
+      </div>
     </section>
 
-    <section class="features" id="features">
-      <div class="container features__grid">
-        <article class="card">
-          <img src="assets/Pet food icon.png" alt="" width="48" height="48">
-          <h3 class="card__title">Best quality pet food</h3>
-          <p class="card__text">Super delicious food. Available in a range of delicious flavors.</p>
+    <!-- ===== FEATURES ===== -->
+    <section class="features">
+      <div class="container features__inner">
+        <article class="feature">
+          <img class="feature__icon" src="assets/Pet food icon.png" alt="" width="56" height="56">
+          <h3 class="feature__title">Best quality pet food</h3>
+          <p class="feature__text">Super delicious food. Available in a range of delicious flavors.</p>
         </article>
-        <article class="card">
-          <img src="assets/Accessories icon.png" alt="" width="48" height="48">
-          <h3 class="card__title">Toys &amp; Accessories</h3>
-          <p class="card__text">Soft toys, chew toys, and rope toys. Strong, interactive, and fun.</p>
+        <article class="feature">
+          <img class="feature__icon" src="assets/Accessories icon.png" alt="" width="56" height="56">
+        <h3 class="feature__title">Toys &amp; Accessories</h3>
+          <p class="feature__text">Soft toys, chew toys, and rope toys. Strong, interactive, and fun.</p>
         </article>
-        <article class="card">
-          <img src="assets/Medical icon.png" alt="" width="48" height="48">
-          <h3 class="card__title">Pets medical care</h3>
-          <p class="card__text">You can get a wide range of great treatments for your dog.</p>
+        <article class="feature">
+          <img class="feature__icon" src="assets/Medical icon.png" alt="" width="56" height="56">
+          <h3 class="feature__title">Pets medical care</h3>
+          <p class="feature__text">You can get a wide range of great treatments for your dog.</p>
         </article>
-        <article class="card">
-          <img src="assets/Grooming icon.png" alt="" width="48" height="48">
-          <h3 class="card__title">Full service grooming</h3>
-          <p class="card__text">It's the right time to groom your dog with a variety of treatments.</p>
+        <article class="feature">
+          <img class="feature__icon" src="assets/Grooming icon.png" alt="" width="56" height="56">
+          <h3 class="feature__title">Full service grooming</h3>
+          <p class="feature__text">It's the right time to groom your dog with a variety of treatments.</p>
         </article>
       </div>
     </section>
 
-    <section class="reviews" id="reviews">
+    <!-- ===== TESTIMONIAL ===== -->
+    <section class="testimonial">
       <div class="container">
-        <figure class="review">
-          <img class="review__img" src="assets/Image (Desktop).png" alt="Customer portrait" width="360" height="360">
-          <blockquote class="review__body">
-            <span class="review__mark" aria-hidden="true">“</span>
-            <p class="review__text">We love using PetWorld. Its products are high quality, affordable and sustainable. We hope the sustainability story becomes the new standard for pet care.</p>
-            <footer class="review__author">Taylor Moore</footer>
-          </blockquote>
+        <figure class="testimonial__card">
+          <img class="testimonial__photo"
+               src="assets/Image (Desktop).png"
+               onerror="this.onerror=null;this.src='assets/placeholders/testimonial.svg'"
+               alt="Dylan Shaw" width="280" height="280">
+          <div class="testimonial__body">
+            <blockquote class="testimonial__text">
+              We love using 'PETWORLD' products. Environmentally friendly and sustainable.
+              We have the sustainable dog bowls and regularly use the mint scented poo bags
+              which were all such great value for money.
+            </blockquote>
+            <figcaption class="testimonial__author">Dylan Shaw</figcaption>
+          </div>
         </figure>
       </div>
     </section>
 
-    <section class="talk" id="contact">
-      <div class="container talk__inner">
-        <div class="talk__text">
-          <h2 class="talk__title">Let's talk,<br>woof!</h2>
-          <p class="talk__desc">Have a question? Leave us a message and we will answer as soon as we can.</p>
-          <a href="mailto:hello@petworld.com" class="btn btn--yellow">Contact us</a>
+    <!-- ===== CONTACT CTA ===== -->
+    <section class="cta">
+      <div class="container cta__inner">
+        <div class="cta__content">
+          <h2 class="cta__title">Let’s talk,<br>woof!</h2>
+          <p class="cta__text">You can ask us questions about your pet, and we will be happy to answer you!</p>
+          <a href="#" class="btn btn--sand">Contact us</a>
         </div>
-        <img class="talk__img" src="assets/Image (1).png" alt="French bulldog" width="420" height="420">
+        <img class="cta__image"
+             src="assets/Image (1).png"
+             onerror="this.onerror=null;this.src='assets/placeholders/contact-dog.svg'"
+             alt="French bulldog lying on a yellow background" width="380" height="290">
       </div>
     </section>
+
   </main>
 
+  <!-- ===== FOOTER ===== -->
   <footer class="footer">
-    <div class="footer__inner">
-      <div class="footer__sub">
-        <a href="#" class="logo"><img src="assets/Logo (1).png" alt="PetWorld" width="140" height="28"></a>
-        <p class="footer_note">Updates right to your inbox</p>
-        <form class="footer__form" action="#">
-          <input type="email" placeholder="Email Address" aria-label="Email Address">
-          <button type="submit" class="btn btn--blue btn--sm">Send</button>
-        </form>
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="#" class="logo logo--small" aria-label="PETWORLD">
+            <img src="assets/Logo (1).png" alt="PETWORLD" height="16">
+          </a>
+
+          <form class="subscribe" action="#" method="post">
+            <label class="subscribe__label" for="email">Updates right to your Inbox</label>
+            <div class="subscribe__row">
+              <input class="subscribe__input" id="email" type="email" placeholder="Email Address">
+              <button class="btn btn--sky" type="submit">Send</button>
+            </div>
+          </form>
+        </div>
+
+        <nav class="footer__nav" aria-label="Footer">
+          <ul class="footer__col">
+            <li><a href="#" class="footerlink footerlink--head">Our story</a></li>
+            <li><a href="#" class="footer__link">FAQ</a></li>
+            <li><a href="#" class="footer__link">Contact</a></li>
+          </ul>
+          <ul class="footer__col">
+            <li><a href="#" class="footerlink footerlink--head">Pet care</a></li>
+            <li><a href="#" class="footer__link">Treatments</a></li>
+            <li><a href="#" class="footer__link">Health</a></li>
+<li><a href="#" class="footer__link">Hygiene</a></li>
+          </ul>
+          <ul class="footer__col">
+            <li><a href="#" class="footerlink footerlink--head">Shop</a></li>
+            <li><a href="#" class="footer__link">Pet Food</a></li>
+            <li><a href="#" class="footer__link">Toys</a></li>
+            <li><a href="#" class="footer__link">Accessories</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav class="footer__cols" aria-label="Footer">
-        <ul><li class="footer__head">Company</li><li><a href="#">About</a></li><li><a href="#">Careers</a></li><li><a href="#">Press</a></li></ul>
-        <ul><li class="footer__head">Services</li><li><a href="#">Food</a></li><li><a href="#">Accessories</a></li><li><a href="#">Grooming</a></li></ul>
-        <ul><li class="footer__head">Help</li><li><a href="#">Contact</a></li><li><a href="#">FAQ</a></li><li><a href="#">Delivery</a></li></ul>
-      </nav>
-    </div>
-    <div class="container footer__bottom">
-      <img class="footer__legal" src="assets/PETWORLD 2022.png" alt="PETWORLD 2022" width="140" height="28">
-    
-      <ul class="footer__links">
-        <li>
-          <a href="#">Privacy policy</a>
-        </li>
-        <li>
-          <a href="#">Terms of use</a>
-        </li>
-      </ul>
-    
-      <ul class="footer__social" aria-label="Social media">
-        <!-- Твої соціальні мережі -->
-      </ul>
+
+      <div class="footer__bottom">
+        <div class="footer__legal">
+          <span>© PETWORLD 2026</span>
+          <a href="#" class="footer__link">Privacy policy</a>
+          <a href="#" class="footer__link">Terms of use</a>
+        </div>
+        <ul class="social" aria-label="Social networks">
+          <li><a href="#" aria-label="Facebook"><img src="assets/Facebook.png" alt="" width="28" height="28"></a></li>
+          <li><a href="#" aria-label="LinkedIn"><img src="assets/Linkedin.png" alt="" width="28" height="28"></a></li>
+          <li><a href="#" aria-label="Instagram"><img src="assets/Instagram.png" alt="" width="28" height="28"></a></li>
+          <li><a href="#" aria-label="Twitter"><img src="assets/Twitter.png" alt="" width="28" height="28"></a></li>
+        </ul>
+      </div>
     </div>
   </footer>
+
 </body>
 </html>
